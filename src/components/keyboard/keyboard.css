@@ -1,0 +1,43 @@
+#keyboard {
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#keyboard button {
+    background-color: #CEAB93;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+#keyboard button:hover {
+    cursor: pointer;
+    background-color: #AD8B73;
+}
+
+#keyboard button.used {
+    opacity: 0.5;
+}
+
+
+/* MEDIAS QUERIES */
+@media(min-width:640px){
+    #keyboard {
+        max-width: 70%;
+        gap: 1rem;
+    }
+
+    #keyboard button {
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+@media(min-width:768px){
+    #keyboard {
+        max-width: 60%;
+    }
+}

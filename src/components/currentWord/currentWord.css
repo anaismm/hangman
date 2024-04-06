@@ -1,0 +1,29 @@
+#current_word {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+#current_word span {
+    font-size: 2rem;
+}
+
+#current_word span.lost {
+    color: red;
+}
+
+#current_word span.notfinded {
+    opacity: 0.3;
+}
+
+
+/* MEDIAS QUERIES */
+@media(min-width:640px){
+    #current_word span {
+        font-size: 3rem;
+    }
+
+    #current_word {
+        gap: 0.5rem;
+    }
+}

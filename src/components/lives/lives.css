@@ -1,0 +1,106 @@
+#hangman {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.part {
+    background-color: #AD8B73;
+}
+
+.first-gallows.drawn {
+    position: absolute;
+    width: 18rem;
+    height: 0.5rem;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.second-gallows.drawn {
+    position: absolute;
+    width: 12rem;
+    height: 0.5rem;
+    bottom: 0; 
+    right: 50%;
+    rotate: 90deg ;
+    transform: translateX(-50%);
+}
+
+.third-gallows.drawn {
+    position: absolute;
+    width: 12rem;
+    height: 0.5rem;
+    bottom: 12rem;
+    right: 50% ;
+    transform: translateX(37%);
+}
+    
+.rope.drawn {
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    transform-origin: top left;
+    transform: rotate(90deg); 
+    left: calc(50% + 4.5rem); 
+    bottom: 12.2rem;
+}
+    
+.head.drawn {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: solid 0.3rem #AD8B73;
+    border-radius: 50%;
+    left: calc(50% + 2.8rem); 
+    bottom: 7rem; 
+}
+
+.body.drawn {
+    position: absolute;
+    width: 3rem;
+    height: 0.3rem;
+    transform: rotate(90deg); 
+    left: calc(50% + 2.8rem); 
+    bottom: 5.5rem;
+}
+
+.left-leg.drawn {
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    transform: rotate(-55deg); 
+    left: calc(50% + 2.4rem); 
+    bottom: 3.2rem;
+}
+
+.right-leg.drawn {
+    position: absolute;
+    width: 2.5rem;
+    height: 0.3rem;
+    transform: rotate(55deg); 
+    left: calc(50% + 3.8rem); 
+    bottom: 3.2rem;
+}
+
+.left-arm.drawn {
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    transform-origin: bottom left; 
+    transform: rotate(40deg); 
+    left: calc(50% + 2.7rem); 
+    bottom: 6.4rem;
+}
+
+.right-arm.drawn {
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    transform-origin: bottom right; 
+    transform: rotate(-40deg); 
+    left: calc(50% + 3.9rem); 
+    bottom: 6.4rem; 
+}

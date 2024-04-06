@@ -11,20 +11,22 @@ const CurrentWord = ({currentWord, usedLetter, win}) => {
                         // par defaut toutes les lettres sont a trouvé
                         let status = "finded"
 
+                        if (letter === "-") {
+                            return <span key={"letter_" + key} className="finded">-</span>;
+                        }
+
                         if (usedLetter.indexOf(letter) == -1) {
                             if (win === -1) {
                                 status="lost"
                             } else {
-                                if (letter === "-") {
-                                    status="finded"
-                                } else {
+            
                                     status="notfinded"
                                 }
-                            }
+                            
                         }
 
                         return <span key={"letter_"+key} className={status}>
-                            {status === "finded" ? letter : (win === -1 ? letter :"_ ")}</span>
+                            {status === "finded" || win === -1 ? letter : "_ "}</span>
                     }
                 )
             }
